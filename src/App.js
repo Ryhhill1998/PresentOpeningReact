@@ -3,7 +3,13 @@ import {useState} from "react";
 import generateOrder from "./hooks/generateOrder";
 import "./App.css";
 
-const originalNames = ["Aaron", "Dad", "Juliette", "Mum", "Ryan"];
+const originalNames = [
+    {name: "Aaron", colour: "orange"},
+    {name: "Dad", colour: "pink"},
+    {name: "Juliette", colour: "green"},
+    {name: "Mum", colour: "blue"},
+    {name: "Ryan", colour: "yellow"}
+];
 
 const App = () => {
     const [names, setNames] = useState(originalNames);
@@ -17,13 +23,13 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1>Present Opening Order Generator</h1>
+      <h1>Opening Order Generator</h1>
       <div className="main">
           <div className="names">
               {names.map((name, i) => (
                   <div key={i} className="row">
-                      <p>{i + 1}.</p>
-                      <p className={`name name-${i + 1}`}>{name}</p>
+                      <p className="row-number">{i + 1}.</p>
+                      <p className={`name ${name.colour}`}>{name.name}</p>
                   </div>
               ))}
           </div>
