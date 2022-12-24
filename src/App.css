@@ -19,22 +19,21 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  height: 60%;
-  width: 30%;
+  height: 70%;
   padding: 3em;
   border-radius: 16px;
-  border: solid 1px black;
 }
 
 .row {
   display: flex;
   gap: 0.5em;
+  font-size: 2rem;
 }
 
 .name {
   border: none;
-  width: 120px;
-  border-bottom: solid 1px black;
+  width: 200px;
+  border-bottom: solid 1px white;
 }
 
 .names {
