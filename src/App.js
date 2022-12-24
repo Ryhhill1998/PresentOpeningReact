@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1>Opening Order Generator</h1>
+      <h1>Opening Order</h1>
       <div className="main">
           <div className="names">
               {names.map((name, i) => (
