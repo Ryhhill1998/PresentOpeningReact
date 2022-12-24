@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
 
 * {
   box-sizing: border-box;
@@ -13,7 +13,9 @@
 
 h1 {
   text-align: center;
-  margin: 1.5em 0 1em;
+  margin: 1.5em 0 0;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
 
 .main {
